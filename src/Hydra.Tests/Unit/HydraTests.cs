@@ -1,12 +1,12 @@
 ﻿using System;
-using Hydra.Core.Hashing;
+using Hydra.Core.Sharding;
 using Microsoft.WindowsAzure.Storage;
 using Moq;
 using Xunit;
 
 namespace Hydra.Tests.Unit
 {
-    public class HydraTests : HydraTestsBase
+    public class HydraTests : UnitBase
     {
         [Fact]
         public void AcceptsStorageAccounts()

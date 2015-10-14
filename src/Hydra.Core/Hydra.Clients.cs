@@ -9,29 +9,35 @@ namespace Hydra.Core
 {
     public partial class Hydra : IHydra
     {
+        readonly StorageFactory<CloudTableClient> _tableClients = new StorageFactory<CloudTableClient>(x => x.CreateCloudTableClient());
+        readonly StorageFactory<CloudBlobClient> _blobClients = new StorageFactory<CloudBlobClient>(x => x.CreateCloudBlobClient());
+        readonly StorageFactory<CloudQueueClient> _queueClients = new StorageFactory<CloudQueueClient>(x => x.CreateCloudQueueClient());
+        readonly StorageFactory<CloudAnalyticsClient> _analyticsClients = new StorageFactory<CloudAnalyticsClient>(x => x.CreateCloudAnalyticsClient());
+        readonly StorageFactory<CloudFileClient> _fileClients = new StorageFactory<CloudFileClient>(x => x.CreateCloudFileClient());
+
         public CloudTableClient CreateTableClient(String shardingKey)
         {
-            return PickShard(shardingKey).CreateCloudTableClient();
+            return _tableClients.Create(PickShard(shardingKey));
         }
 
         public CloudBlobClient CreateBlobClient(String shardingKey)
         {
-            return PickShard(shardingKey).CreateCloudBlobClient();
+            return _blobClients.Create(PickShard(shardingKey));
         }
 
         public CloudQueueClient CreateQueueClient(String shardingKey)
         {
-            return PickShard(shardingKey).CreateCloudQueueClient();
+            return _queueClients.Create(PickShard(shardingKey));
         }
 
         public CloudAnalyticsClient CreateAnalyticsClient(String shardingKey)
         {
-            return PickShard(shardingKey).CreateCloudAnalyticsClient();
+            return _analyticsClients.Create(PickShard(shardingKey));
         }
 
         public CloudFileClient CreateFileClient(String shardingKey)
         {
-            return PickShard(shardingKey).CreateCloudFileClient();
+            return _fileClients.Create(PickShard(shardingKey));
         }
     }
 }

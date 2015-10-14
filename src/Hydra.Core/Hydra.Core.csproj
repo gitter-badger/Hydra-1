@@ -72,8 +72,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hashing\ISharding.cs" />
-    <Compile Include="Hashing\JumpSharding.cs" />
+    <Compile Include="StorageFactory.cs" />
+    <Compile Include="Sharding\ISharding.cs" />
+    <Compile Include="Sharding\JumpSharding.cs" />
+    <Compile Include="Sharding\Shard.cs" />
     <Compile Include="Hydra.Base.cs" />
     <Compile Include="IHydra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

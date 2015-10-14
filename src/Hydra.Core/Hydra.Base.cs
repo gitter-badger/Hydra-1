@@ -2,7 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using Hydra.Core.Hashing;
+using Hydra.Core.Sharding;
 using Microsoft.WindowsAzure.Storage;
 
 namespace Hydra.Core
@@ -51,11 +51,16 @@ namespace Hydra.Core
             return hydra;
         }
 
-        CloudStorageAccount PickShard(String shardingKey)
+        Shard PickShard(String shardingKey)
         {
             var shard = _sharding.GetShard(shardingKey, Accounts.Count());
             var account = Accounts.ElementAt(shard);
-            return account;
+
+            return new Shard()
+            {
+                Index = shard,
+                Account = account
+            };
         }
     }
 }

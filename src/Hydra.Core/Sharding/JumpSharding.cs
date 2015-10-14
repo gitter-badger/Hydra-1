@@ -2,7 +2,7 @@
 using System.Text;
 using Murmur;
 
-namespace Hydra.Core.Hashing
+namespace Hydra.Core.Sharding
 {
     /// <summary>
     /// Jump Consistent Hash implementation for shard picker

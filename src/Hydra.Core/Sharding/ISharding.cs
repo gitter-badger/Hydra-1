@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hydra.Core.Hashing
+namespace Hydra.Core.Sharding
 {
     /// <summary>
     /// Shard picker definition

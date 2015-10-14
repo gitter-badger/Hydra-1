@@ -88,9 +88,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Integration\HydraTests.cs" />
+    <Compile Include="Integration\IntegrationBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit\HydraTests.cs" />
-    <Compile Include="Unit\HydraTestsBase.cs" />
+    <Compile Include="Unit\UnitBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,15 +1,15 @@
 using System;
-using Hydra.Core.Hashing;
+using Hydra.Core.Sharding;
 using Microsoft.WindowsAzure.Storage;
 using Moq;
 
 namespace Hydra.Tests.Unit
 {
-    public abstract class HydraTestsBase
+    public abstract class UnitBase
     {
         public static Core.IHydra Subject { get; private set; }
 
-        static HydraTestsBase()
+        static UnitBase()
         {
             Subject = CreateHydra();
         }

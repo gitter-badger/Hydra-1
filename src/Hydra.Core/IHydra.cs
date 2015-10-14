@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Hydra.Core.Hashing;
+using Hydra.Core.Sharding;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Analytics;
 using Microsoft.WindowsAzure.Storage.Blob;
