@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ff2a637b-206f-439a-8feb-2b38328e0bcf</id>
+    <id>Hydra.Core</id>
     <version>$version$</version>
     <title>Hydra.Core</title>
     <authors>Mailcloud</authors>
