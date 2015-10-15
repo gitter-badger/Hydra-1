@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Hydra.Core</id>
+    <id>Mailcloud.Hydra.Core</id>
     <version>$version$</version>
-    <title>Hydra.Core</title>
+    <title>Mailcloud.Hydra.Core</title>
     <authors>Mailcloud</authors>
     <owners>Mailcloud</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
