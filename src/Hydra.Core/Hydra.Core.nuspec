@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>ff2a637b-206f-439a-8feb-2b38328e0bcf</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <title>Hydra.Core</title>
+    <authors>Mailcloud</authors>
+    <owners>Mailcloud</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://www.mailcloud.com/</projectUrl>
     <iconUrl>https://www.mailcloud.com/img/build/favicon/apple-touch-icon-57x57.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Sharding library for Azure Storage optimised for multithreading.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright Mailcloud 2015</copyright>
     <tags>Azure Table Storage Shard Sharding</tags>
