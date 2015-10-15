@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Hydra.Clients.cs" />
+    <None Include="Hydra.Core.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
