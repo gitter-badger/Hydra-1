@@ -14,6 +14,10 @@ Hydra.Core is Azure Subscribtion agnostic, which means it is possible to use Sto
 
 The above functionality gives the developer configurable IOPS and Disk Space with no upper limits.
 
+### Advanced usage
+
+It is possible to have multiple instances of Hydra, configured to point at different and/or the same Storage Accounts, with different and/or the same ISharding implementations. That feature gives the developer maximum flexibility for making sure the right data is distributed in the right way.
+
 ### Example
 
 Example usage can be found in the Hydra.Tests.Integration namespace.
