@@ -67,6 +67,6 @@ namespace Hydra.Core
         /// Create a FileClient for a specific shard
         /// </summary>
         /// <param name="shardingKey">Key which determines which shard to use</param>
-        CloudFileClient CreateFileClient(String shardingKey);
+        //CloudFileClient CreateFileClient(String shardingKey);
     }
 }

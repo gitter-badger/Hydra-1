@@ -13,7 +13,7 @@ namespace Hydra.Core
         readonly StorageFactory<CloudBlobClient> _blobClients = new StorageFactory<CloudBlobClient>(x => x.CreateCloudBlobClient());
         readonly StorageFactory<CloudQueueClient> _queueClients = new StorageFactory<CloudQueueClient>(x => x.CreateCloudQueueClient());
         readonly StorageFactory<CloudAnalyticsClient> _analyticsClients = new StorageFactory<CloudAnalyticsClient>(x => x.CreateCloudAnalyticsClient());
-        readonly StorageFactory<CloudFileClient> _fileClients = new StorageFactory<CloudFileClient>(x => x.CreateCloudFileClient());
+        //readonly StorageFactory<CloudFileClient> _fileClients = new StorageFactory<CloudFileClient>(x => x.CreateCloudFileClient());
 
         public CloudTableClient CreateTableClient(String shardingKey)
         {
@@ -35,9 +35,9 @@ namespace Hydra.Core
             return _analyticsClients.Create(PickShard(shardingKey));
         }
 
-        public CloudFileClient CreateFileClient(String shardingKey)
-        {
-            return _fileClients.Create(PickShard(shardingKey));
-        }
+        //public CloudFileClient CreateFileClient(String shardingKey)
+        //{
+        //    return _fileClients.Create(PickShard(shardingKey));
+        //}
     }
 }
