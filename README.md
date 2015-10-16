@@ -1,6 +1,6 @@
 ## Hydra
 
-A set of components to take the most advantage of performance and capacity of Azure Storage.
+A set of components to take the most advantage of performance and capacity of Azure Storage. Hydra is Azure Subscribtion agnostic, which means it is possible to use Storage Accounts from different Azure Subscriptions. This functionality gives the developer configurable IOPS and Disk Space with no upper limits.
 
 ## Hydra.Core
 
@@ -11,10 +11,6 @@ A central component for scaling across multiple Storage Accounts. It is using a 
 ` class JumpSharding : ISharding `
 
 Default implementation of ISharding provided is JumpSharding that implement's Jump Consistent Hash.
-
-Hydra.Core is Azure Subscribtion agnostic, which means it is possible to use Storage Accounts from different Azure Subscriptions.
-
-The above functionality gives the developer configurable IOPS and Disk Space with no upper limits.
 
 ### Disclaimer
 
