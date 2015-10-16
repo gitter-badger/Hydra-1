@@ -4,6 +4,8 @@ A set of components to take the most advantage of performance and capacity of Az
 
 ## Hydra.Core
 
+` class Hydra : IHydra `
+
 A central component for scaling across multiple Storage Accounts. It is using a ISharding strategy to compute consistent hashes that pick a right Storage Account by key provided.
 
 Default implementation of ISharding provided is JummpSharding that implement's Jump Consistent Hash.
