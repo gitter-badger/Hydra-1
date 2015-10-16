@@ -12,11 +12,13 @@ A central component for scaling across multiple Storage Accounts. It is using a 
 
 Default implementation of ISharding provided is JumpSharding that implement's Jump Consistent Hash.
 
-Hydra.Core doesn't manage shard migration, which means you are constrained the amount of Storage Accounts you start of with. The more the better.
-
 Hydra.Core is Azure Subscribtion agnostic, which means it is possible to use Storage Accounts from different Azure Subscriptions.
 
 The above functionality gives the developer configurable IOPS and Disk Space with no upper limits.
+
+### Disclaimer
+
+Hydra.Core doesn't manage shard migration, which means you are constrained the amount of Storage Accounts you start of with. The more the better.
 
 ### Advanced usage
 
