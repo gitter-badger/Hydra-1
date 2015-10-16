@@ -2,7 +2,7 @@
 
 A set of components to take the most advantage of performance and capacity of Azure Storage.
 
-## Hydra.Code
+## Hydra.Core
 
 A central component for scaling across multiple Storage Accounts. It is using a ISharding strategy to compute consistent hashes that pick a right Storage Account by key provided.
 
