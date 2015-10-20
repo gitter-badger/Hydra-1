@@ -18,4 +18,11 @@
   <files>
     <file src="bin\Debug\*.dll" target="lib\net46" />
   </files>
+  <dependencies>
+    <group targetFramework="net46">
+      <dependency id="murmurhash" />
+      <dependency id="Newtonsoft.Json" />
+      <dependency id="WindowsAzure.Storage" />
+   </group>
+  </dependencies>
 </package>
