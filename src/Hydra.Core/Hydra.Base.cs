@@ -51,6 +51,11 @@ namespace Hydra.Core
             return hydra;
         }
 
+        public static IHydra Create(ISharding sharding, params CloudStorageAccount[] accounts)
+        {
+            return Create(sharding, accounts);
+        }
+
         Shard PickShard(String shardingKey)
         {
             var shard = _sharding.GetShard(shardingKey, Accounts.Count());
