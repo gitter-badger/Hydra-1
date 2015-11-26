@@ -7,7 +7,7 @@
     <authors>Mailcloud</authors>
     <owners>Mailcloud</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-    <projectUrl>https://www.mailcloud.com/</projectUrl>
+    <projectUrl>https://github.com/Mailcloud/Hydra</projectUrl>
     <iconUrl>https://www.mailcloud.com/img/build/favicon/apple-touch-icon-57x57.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Sharding library for Azure Storage optimised for multithreading.</description>
