@@ -1,5 +1,7 @@
 ## Hydra
 
+[![Build status](https://ci.appveyor.com/api/projects/status/b8o97a6lxfpvdvdv/branch/master?svg=true)](https://ci.appveyor.com/project/naeem-khedarun/hydra/branch/master)
+
 A set of components to take the most advantage of performance and capacity of Azure Storage. 
 
 Hydra is Azure Subscribtion agnostic, which means it is possible to use Storage Accounts from different Azure Subscriptions. This functionality gives the developer configurable IOPS and Disk Space with no upper limits.
